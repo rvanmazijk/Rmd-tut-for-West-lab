@@ -10,3 +10,4 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Please the [pre-tut setup](pre-tut-setup.html), if you haven't already, before we begin

@@ -1,0 +1,29 @@
+---
+title: Pre-tut setup
+subtitle: West Lab, Dept. Biological Sciences, UCT
+author: Ruan van Mazijk
+date: '`r Sys.Date()`'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+Just some housekeeping to make sure the tut runs smoothly, you need the following installed and set up on your computer before we meet:
+
+1. A recent version of R (ideally the latest version, available [here](https://cloud.r-project.org))
+2. Ditto for [RStudio](https://www.rstudio.com/products/rstudio/download/). This is, in my opinion, the most user friendly and powerful environment in which to use R, and especially RMarkdown.
+3. The R-package `rmarkdown`. This can be installed by running the following code in the console in a new R-session on your computer:
+
+```{r}
+install.packages("rmarkdown", dependencies = TRUE)
+```
+
+If you can open RStudio, run the following line in the console:
+
+```{r}
+"rmarkdown" %in% installed.packages()
+```
+
+and it returns `TRUE`, then you are good to go.
