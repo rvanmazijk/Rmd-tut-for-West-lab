@@ -1,6 +1,6 @@
 ---
 title: Pre-tut setup
-subtitle: West Lab, Dept. Biological Sciences, UCT
+subtitle: West Lab, Dept. Biological Sciences ![](BIO.png){ width=25px }, UCT ![](UCT.png){ width=25px }
 author: Ruan van Mazijk
 date: '`r Sys.Date()`'
 output: html_document
