@@ -17,6 +17,8 @@ R Markdown is a document preparation system, like MS Word, but completely differ
 
 ***
 
+## Document preparation systems
+
 Document prep systems vary. There are those where what you **see** is what you **get** in the final document ("WYSIWYG"-systems; e.g. MS Word), and there are those where what you **see** is what you **mean** ("WYSIWYM"-systems; e.g. markup languages such as HTML, LaTeX).
 
 R Markdown is based on the markup language "Markdown". Mark**down** was invented to be a simpler alternative to more complicated mark**up** languages like HTML and LaTeX. These markup languafes are often quite hard to read in raw-form and even harder to write. See for yourself:
@@ -54,9 +56,7 @@ An R Markdown (`.Rmd`) file has two main components:
 1. the YAML header
 2. and the body
 
-# Examples
-
-***
+# Example
 
 `analysis.Rmd` might look like this:
 
@@ -78,17 +78,25 @@ Etc. etc. etc. ...
 ***
 
 ## Rendering your document
-# Use the output specified in the header
-rmarkdown::render(input = "analysis.Rmd")
-# Or over-ride it
-rmarkdown::render(
-  input = "analysis.Rmd",
-  output_format = "pdf_document"
-)
+
+Use the output specified in the header
+
+    rmarkdown::render("analysis.Rmd")
+
+Or over-ride it
+
+    rmarkdown::render("analysis.Rmd"
+      output_format = "pdf_document"
+    )
 
 ***
 
 ## Using Markdown-style markup
+
+***
+
+### Headings
+
 # A heading
 
 ## A sub-heading
