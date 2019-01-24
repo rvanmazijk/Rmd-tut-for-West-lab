@@ -19,7 +19,7 @@ Please refer to the [pre-tut setup](pre-tut-setup.html), if you haven't already,
 
 R Markdown is a document preparation system, like MS Word, but completely different. Importantly, it works in plain-text and is highly accessible, open source, and makes it really easy to embed R-code in documents (e.g. to create figures or tables).
 
-# Document prep systems
+***
 
 Document prep systems vary. There are those where what you **see** is what you **get** in the final document ("WYSIWYG"-systems; e.g. MS Word), and there are those where what you **see** is what you **mean** ("WYSIWYM"-systems; e.g. markup languages such as HTML, LaTeX).
 
@@ -32,8 +32,6 @@ R Markdown is based on the markup language "Markdown". Mark**down** was invented
 ***
 
 ![LaTeX](LaTeX.png)
-
-***
 
 # The benefits of R Markdown
 
@@ -49,9 +47,70 @@ R Markdown takes the file you write (e.g. `analysis.Rmd`), converts it to plain 
 
 ![R Markdown flowchart (<https://rmarkdown.rstudio.com/lesson-2.html>)](rmarkdownflow.png)
 
-\hfill
+# Possible output formats
 
-\break
+![](possible-output-formats.png)
+
+***
+
+An R Markdown (`.Rmd`) file has two main components:
+
+1. the YAML header
+2. and the body
+
+# Examples
+
+***
+
+`analysis.Rmd` might look like this:
+
+```
+---
+title: My analysis
+author: Ruan van Mazijk
+date: 2019-11-15
+output: html_document
+---
+
+# Introduction
+
+Blah blah blah blah ...
+
+# Methods
+
+Etc. etc. etc. ...
+```
+
+***
+
+```{r render-eg}
+# Use the output specified in the header
+rmarkdown::render(input = "analysis.Rmd")
+# Or over-ride it
+rmarkdown::render(
+  input = "analysis.Rmd",
+  output_format = "pdf_document"
+)
+```
+
+***
+
+```
+# A heading
+
+## A sub-heading
+
+### A sub-sub-heading
+
+(Can go down 6 levels)
+```
+
+***
+
+```
+<!--A comment-->
+<!--(won't get rendered in any of the final output(s))-->
+```
 
 # Further reading
 
