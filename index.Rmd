@@ -108,8 +108,79 @@ Or over-ride it
 ***
 
 ### Unordered lists
+
+    - Item
+    - Item
+    - Item
+      - Sub-item
+      - Sub-item
+        - Sub-sub-item
+        - Etc.
+***
+
+### Unordered lists cont.
+
+- Item
+- Item
+- Item
+  - Sub-item
+  - Sub-item
+    - Sub-sub-item
+    - Etc.
+
+***
+
+### Ordered lists
+    
+    1. Item
+    2. Item
+    3. Item
+      a. Sub-item
+      b. Sub-item
+        1. Sub-sub-item
+        2. Etc.
+
+***
+
+### Ordered lists cont.
+
+1. Item
+2. Item
+3. Item
+    a. Sub-item
+    b. Sub-item
+        1. Sub-sub-item
+        2. Etc.
+
+***
+
+### Simple tables
+
+    Column1 | Column2 | Column 3
+    --------|---------|---------
+    Row1    |         |
+    Row2    |         |
+    Row3    |         |
+
+***
+
+### Simple tables cont.
+
+Column1 | Column2 | Column 3
+--------|---------|---------
+Row1    |         |
+Row2    |         |
+Row3    |         |
+
+***
+
+### Comments
+
 <!--A comment-->
 <!--(won't get rendered in any of the final output(s))-->
+
+***
+
 ```
 
 # Further reading
