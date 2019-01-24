@@ -9,10 +9,6 @@ fig_caption: yes
 mainfont: Avenir
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
-```
-
 Please refer to the [pre-tut setup](pre-tut-setup.html), if you haven't already, before we begin.
 
 # What is R Markdown?
@@ -64,7 +60,6 @@ An R Markdown (`.Rmd`) file has two main components:
 
 `analysis.Rmd` might look like this:
 
-```
 ---
 title: My analysis
 author: Ruan van Mazijk
@@ -79,11 +74,10 @@ Blah blah blah blah ...
 # Methods
 
 Etc. etc. etc. ...
-```
 
 ***
 
-```{r render-eg}
+## Rendering your document
 # Use the output specified in the header
 rmarkdown::render(input = "analysis.Rmd")
 # Or over-ride it
@@ -91,11 +85,10 @@ rmarkdown::render(
   input = "analysis.Rmd",
   output_format = "pdf_document"
 )
-```
 
 ***
 
-```
+## Using Markdown-style markup
 # A heading
 
 ## A sub-heading
@@ -103,11 +96,10 @@ rmarkdown::render(
 ### A sub-sub-heading
 
 (Can go down 6 levels)
-```
 
 ***
 
-```
+### Unordered lists
 <!--A comment-->
 <!--(won't get rendered in any of the final output(s))-->
 ```
