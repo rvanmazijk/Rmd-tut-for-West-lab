@@ -7,7 +7,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(eval = FALSE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 Just some housekeeping to make sure the tut runs smoothly, you need the following installed and set up on your computer before we meet:

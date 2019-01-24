@@ -10,7 +10,7 @@ mainfont: Avenir
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 Please refer to the [pre-tut setup](pre-tut-setup.html), if you haven't already, before we begin.
