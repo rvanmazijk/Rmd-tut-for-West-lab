@@ -61,20 +61,20 @@ An R Markdown (`.Rmd`) file has two main components:
 
 `analysis.Rmd` might look like this:
 
----
-title: My analysis
-author: Ruan van Mazijk
-date: 2019-11-15
-output: html_document
----
-
-# Introduction
-
-Blah blah blah blah ...
-
-# Methods
-
-Etc. etc. etc. ...
+    ---
+    title: My analysis
+    author: Ruan van Mazijk
+    date: 2019-11-15
+    output: html_document
+    ---
+    
+    # Introduction
+    
+    Blah blah blah blah ...
+    
+    # Methods
+    
+    Etc. etc. etc. ...
 
 ***
 
@@ -98,13 +98,13 @@ Or over-ride it
 
 ### Headings
 
-# A heading
-
-## A sub-heading
-
-### A sub-sub-heading
-
-(Can go down 6 levels)
+    # A heading
+    
+    ## A sub-heading
+    
+    ### A sub-sub-heading
+    
+    (Can go down 6 levels)
 
 ***
 
@@ -177,8 +177,8 @@ Row3    |         |
 
 ### Comments
 
-<!--A comment-->
-<!--(won't get rendered in any of the final output(s))-->
+    <!--A comment-->
+    <!--(won't get rendered in any of the final output(s))-->
 
 ***
 
@@ -229,7 +229,47 @@ Our study aligns with previous findings [@paper1; @paper2].
 
 ***
 
+### R-code
+
+We can embed figures in our document. `echo=FALSE` tells R Markdown not to display the code chunk that generates the figure.
+
+    \    ```{r, echo=FALSE}
+    \    plot(cars)
+    \    ```
+
+(Ignore the backslashes)
+
+***
+
+### R-code cont.
+
+```{r, echo=FALSE}
+plot(cars)
 ```
+
+***
+
+Alternatively, we can set `echo=TRUE`:
+
+    \    ```{r, echo=TRUE}
+    \    x <- 1:100
+    \    y <- 3 * jitter(x, 100)
+    \    m <- lm(y ~ x)
+    \    visreg::visreg(m)
+    \    ```
+
+***
+
+```{r}
+x <- 1:100
+y <- 3 * jitter(x, 100)
+m <- lm(y ~ x)
+visreg::visreg(m)
+```
+
+# A _live-coding_ example!
+
+...
 
 # Further reading
 
