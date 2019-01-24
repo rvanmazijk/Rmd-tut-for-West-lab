@@ -2,7 +2,7 @@
 title: An introduction to R Markdown
 subtitle: |
   | West Lab, Dept. Biological Sciences, UCT
-  | ![](BIO.png){ width=25px } ![](UCT.png){ width=25px }
+  | ![](images/BIO.png){ width=25px } ![](images/UCT.png){ width=25px }
 author: Ruan van Mazijk
 date: '`r Sys.Date()`'
 fig_caption: yes
@@ -27,11 +27,11 @@ R Markdown is based on the markup language "Markdown". Mark**down** was invented
 
 ***
 
-![HTML](HTML.png)
+![HTML](images/HTML.png)
 
 ***
 
-![LaTeX](LaTeX.png)
+![LaTeX](images/LaTeX.png)
 
 # The benefits of R Markdown
 
@@ -45,11 +45,11 @@ And, best of all, it makes the results of any analysis fully reproducible!
 
 R Markdown takes the file you write (e.g. `analysis.Rmd`), converts it to plain markdown using the R-package `knitr`, then converts it any of the output formats you choose, using the open source software `pandoc`.
 
-![R Markdown flowchart (<https://rmarkdown.rstudio.com/lesson-2.html>)](rmarkdownflow.png)
+![R Markdown flowchart (<https://rmarkdown.rstudio.com/lesson-2.html>)](images/rmarkdownflow.png)
 
 # Possible output formats
 
-![](possible-output-formats.png)
+![](images/possible-output-formats.png)
 
 ***
 
