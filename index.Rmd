@@ -1,6 +1,8 @@
 ---
 title: An introduction to RMarkdown
-subtitle: West Lab, Dept. Biological Sciences ![](BIO.png){ width=25px }, UCT ![](UCT.png){ width=25px }
+subtitle: |
+  | West Lab, Dept. Biological Sciences, UCT
+  | ![](BIO.png){ width=25px } ![](UCT.png){ width=25px }
 author: Ruan van Mazijk
 date: '`r Sys.Date()`'
 fig_caption: yes
