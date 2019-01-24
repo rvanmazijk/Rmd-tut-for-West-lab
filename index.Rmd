@@ -48,3 +48,13 @@ And, best of all, it makes the results of any analysis fully reproducible!
 R Markdown takes the file you write (e.g. `analysis.Rmd`), converts it to plain markdown using the R-package `knitr`, then converts it any of the output formats you choose, using the open source software `pandoc`.
 
 ![R Markdown flowchart (<https://rmarkdown.rstudio.com/lesson-2.html>)](rmarkdownflow.png)
+
+\hfill
+
+\break
+
+# Further reading
+
+R Markdown "Getting Started" Tutorial. <https://rmarkdown.rstudio.com/lesson-1.html>.
+
+Yihui, X., Allaire, J.J., Grolemund, G. (2018). R Markdown: The Definitive Guide. <https://bookdown.org/yihui/rmarkdown/>.
