@@ -7,6 +7,7 @@ author: Ruan van Mazijk
 date: '`r Sys.Date()`'
 fig_caption: yes
 mainfont: Avenir
+bibliography: example.bib
 ---
 
 Please refer to the [pre-tut setup](pre-tut-setup.html), if you haven't already, before we begin.
@@ -181,6 +182,53 @@ Row3    |         |
 
 ***
 
+### Citations
+
+You need a `.bib` file, which looks like this (e.g. `example.bib`):
+
+    @article{West2018,
+     author = {West, A.G. et al.},
+     year = {2018},
+     title = {A previous study},
+     journal = {Nature},
+     number = {50},
+     volume = {49},
+     pages = {340--346}
+    }
+    @article{West2017,
+     ...
+    }
+
+(Mendeley and other reference managing software can easily generate this file for you from your library.)
+
+***
+
+And link it to `analysis.Rmd` in the YAML header:
+
+    ---
+    ...
+    bibliography: example.bib
+    ---
+
+***
+
+By adding the following heading to the end of `analysis.Rmd`:
+
+    # References
+
+It will automatically produce the reference list!
+
+***
+
+    Our study aligns with previous findings
+    [@paper1; @paper2].
+
+***
+
+Our study aligns with previous findings [@paper1; @paper2].
+
+***
+
 ```
 
 # Further reading
@@ -188,3 +236,5 @@ Row3    |         |
 R Markdown "Getting Started" Tutorial. <https://rmarkdown.rstudio.com/lesson-1.html>.
 
 Yihui, X., Allaire, J.J., Grolemund, G. (2018). R Markdown: The Definitive Guide. <https://bookdown.org/yihui/rmarkdown/>.
+
+# References
