@@ -235,6 +235,10 @@ Our study aligns with previous findings [@paper1; @paper2].
 
 R Markdown "Getting Started" Tutorial. <https://rmarkdown.rstudio.com/lesson-1.html>.
 
+R Mardown Cheatsheet. <https://rmarkdown.rstudio.com/lesson-15.html>.
+
+R Markdown Reference Guide. <https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf>.
+
 Yihui, X., Allaire, J.J., Grolemund, G. (2018). R Markdown: The Definitive Guide. <https://bookdown.org/yihui/rmarkdown/>.
 
 # References
