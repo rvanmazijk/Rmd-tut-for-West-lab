@@ -6,12 +6,12 @@ slides: index.pdf
 
 pretut: pre-tut-setup.html
 
-index.html: index.Rmd _output.yaml
+index.html: index.Rmd _output.yml
 	Rscript -e '\
 	library(rmarkdown);\
 	render("$<", "html_document")'
 
-index.pdf: index.Rmd _output.yaml
+index.pdf: index.Rmd _output.yml
 	Rscript -e '\
 	library(rmarkdown);\
 	render("$<", "beamer_presentation")'
